@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
+import styled from 'styled-components'
 
+
+const Body = styled.body`
+        font-family: "Montserrat";
+        margin: 0 auto;
+        color: #161616;
+        box-sizing: border-box;
+`
+export const Container = styled.div`
+    max-width: 1010px;
+    margin: 0 auto;
+`
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <Body>
+            <Header/>
+            <Main />
+            <Footer />
+        </Body>
+    );
 }
 
 export default App;
