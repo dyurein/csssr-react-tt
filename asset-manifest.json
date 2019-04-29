@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/dyurein/csssr-react-tt/static/css/main.2f0f7bbe.chunk.css",
+    "main.js": "/dyurein/csssr-react-tt/static/js/main.1978b9a2.chunk.js",
+    "main.js.map": "/dyurein/csssr-react-tt/static/js/main.1978b9a2.chunk.js.map",
+    "runtime~main.js": "/dyurein/csssr-react-tt/static/js/runtime~main.93b4ccb2.js",
+    "runtime~main.js.map": "/dyurein/csssr-react-tt/static/js/runtime~main.93b4ccb2.js.map",
+    "static/css/2.e16c2e2d.chunk.css": "/dyurein/csssr-react-tt/static/css/2.e16c2e2d.chunk.css",
+    "static/js/2.a8d3a104.chunk.js": "/dyurein/csssr-react-tt/static/js/2.a8d3a104.chunk.js",
+    "static/js/2.a8d3a104.chunk.js.map": "/dyurein/csssr-react-tt/static/js/2.a8d3a104.chunk.js.map",
+    "index.html": "/dyurein/csssr-react-tt/index.html",
+    "precache-manifest.47d3ca19e256f4f550b349207be4944c.js": "/dyurein/csssr-react-tt/precache-manifest.47d3ca19e256f4f550b349207be4944c.js",
+    "service-worker.js": "/dyurein/csssr-react-tt/service-worker.js",
+    "static/css/2.e16c2e2d.chunk.css.map": "/dyurein/csssr-react-tt/static/css/2.e16c2e2d.chunk.css.map",
+    "static/css/main.2f0f7bbe.chunk.css.map": "/dyurein/csssr-react-tt/static/css/main.2f0f7bbe.chunk.css.map",
+    "static/media/App.css": "/dyurein/csssr-react-tt/static/media/couture-bld.82500e0d.otf",
+    "static/media/bulb.svg": "/dyurein/csssr-react-tt/static/media/bulb.c1741ae2.svg",
+    "static/media/compass.svg": "/dyurein/csssr-react-tt/static/media/compass.5ead9985.svg",
+    "static/media/heart.svg": "/dyurein/csssr-react-tt/static/media/heart.11f2de13.svg",
+    "static/media/main-section.jpg": "/dyurein/csssr-react-tt/static/media/main-section.f7f6ee9f.jpg",
+    "static/media/photo_1.png": "/dyurein/csssr-react-tt/static/media/photo_1.9706a2d1.png",
+    "static/media/photo_2.png": "/dyurein/csssr-react-tt/static/media/photo_2.b2634571.png",
+    "static/media/photo_3.png": "/dyurein/csssr-react-tt/static/media/photo_3.3574c5eb.png",
+    "static/media/photo_4.png": "/dyurein/csssr-react-tt/static/media/photo_4.b38c02a0.png",
+    "static/media/photo_5.png": "/dyurein/csssr-react-tt/static/media/photo_5.1031b23c.png",
+    "static/media/photo_6.png": "/dyurein/csssr-react-tt/static/media/photo_6.8b88219d.png",
+    "static/media/photo_8.png": "/dyurein/csssr-react-tt/static/media/photo_8.3cc52291.png",
+    "static/media/tools.svg": "/dyurein/csssr-react-tt/static/media/tools.2f8a9a48.svg"
+  }
+}
