@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import main_image from '../../../images/main-section.jpg'
 import {Container} from "../../../App";
+import Checkbox from "../Checkbox";
 
 const Front_section = styled.section`
     background: url(${main_image});
@@ -82,59 +83,14 @@ const Front_form_terms = styled.div`
     display: flex;
     align-items: center;
 `
-const Front_form_checkbox = styled.input`
-    margin-right: 23px;
-    &:not(:checked),
-    &:checked {
-         position: absolute;
-         left: -9999px;
-    }
-    &:not(:checked) + label,
-    &:checked + label {
-         position: relative;
-         padding-left: 1.95em;
-         cursor: pointer;
-    }
-    &:not(:checked) + label:before,
-    &:checked + label:before {
-         content: '';
-         position: absolute;
-         left: 0;
-         top: 2px;
-         width: 20px;
-         height: 20px;
-         border: none;
-         background: #fff;
-         border-radius: 5px;
-         box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
-    }
-    &:not(:checked) + label:after,
-    &:checked + label:after {
-         content: '\\2713\\0020';
-         position: absolute;
-         top: 5px;
-         left: 4px;
-         font-size: 18px;
-         line-height: 0.8;
-         color: #161616;
-         transition: all .2s;
-         font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
-    }
-    &:not(:checked) + label:after {
-         opacity: 0;
-         transform: scale(0);
-    }
-    &:checked + label:after {
-         opacity: 1;
-         transform: scale(1);
-    }
-`
+
 const Front_form_label = styled.label`
     font-size: 20px;
     line-height: 25px;
     color: #fff;
     font-family: "PTSerif";
     cursor: pointer;
+    user-select: none;
 `
 const Front_form_submit = styled.button`
     width: 100%;
@@ -167,7 +123,7 @@ const Main_section = () => {
                         <Front_form_input type="text" placeholder="Phone Number"></Front_form_input>
                         <Front_form_input type="text" placeholder="Country"></Front_form_input>
                         <Front_form_terms>
-                            <Front_form_checkbox type="checkbox" id="form_checkbox"/>
+                            <Checkbox />
                             <Front_form_label for="form_checkbox">I accept the terms & conditions</Front_form_label>
                         </Front_form_terms>
                         <Front_form_submit type="submit">Send</Front_form_submit>

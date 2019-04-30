@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Container} from "../../../App";
-import serv_heart from '../../../images/svg/heart.svg'
-import serv_tools from '../../../images/svg/tools.svg'
-import serv_bulb from '../../../images/svg/bulb.svg'
-import serv_compass from '../../../images/svg/compass.svg'
 
 
 const Pricing_section = styled.section`
@@ -101,6 +97,27 @@ const Pricing_item_link = styled.a`
     text-decoration: none;
 `
 
+let pricingItemData = [
+    {
+        title: 'Pricing',
+        price: 'Free',
+        benefit: ['Free Service', 'Multiple Accounts', 'Management No', '--', '--'],
+        link: 'Try'
+    },
+    {
+        title: 'Business',
+        angle: 'Popular',
+        price: '$97',
+        benefit: ['Free Service', 'Multiple Accounts', 'Management No', 'Unlimited Data', '--'],
+        link: 'Sign up'
+    },
+    {
+        title: 'Professional',
+        price: '$297',
+        benefit: ['Free Service', 'Multiple Accounts', 'Management No', 'Unlimited Data', 'Whatever You Need'],
+        link: 'Sign up'
+    }
+]
 
 
 const Pricing = () => {
@@ -109,37 +126,20 @@ const Pricing = () => {
             <Container>
                 <Pricing_inner>
                     <Pricing_title>Pricing</Pricing_title>
-                    <Pricing_item>
-                        <Pricing_item_title>Starter</Pricing_item_title>
-                        <Pricing_item_price>Free</Pricing_item_price>
-                        <Pricing_item_benefit>Free Service</Pricing_item_benefit>
-                        <Pricing_item_benefit>Multiple Accounts</Pricing_item_benefit>
-                        <Pricing_item_benefit>Management No</Pricing_item_benefit>
-                        <Pricing_item_benefit>&mdash;</Pricing_item_benefit>
-                        <Pricing_item_benefit>&mdash;</Pricing_item_benefit>
-                        <Pricing_item_link href="javascript:void(0)">Try</Pricing_item_link>
-                    </Pricing_item>
-                    <Pricing_item>
-                        <Pricing_item_pop>Popular</Pricing_item_pop>
-                        <Pricing_item_title>Business</Pricing_item_title>
-                        <Pricing_item_price>$97</Pricing_item_price>
-                        <Pricing_item_benefit>Free Service</Pricing_item_benefit>
-                        <Pricing_item_benefit>Multiple Accounts</Pricing_item_benefit>
-                        <Pricing_item_benefit>Management No</Pricing_item_benefit>
-                        <Pricing_item_benefit>Unlimited Data</Pricing_item_benefit>
-                        <Pricing_item_benefit>--</Pricing_item_benefit>
-                        <Pricing_item_link href="javascript:void(0)" primary>Sign up</Pricing_item_link>
-                    </Pricing_item>
-                    <Pricing_item>
-                        <Pricing_item_title>Professional</Pricing_item_title>
-                        <Pricing_item_price>$297</Pricing_item_price>
-                        <Pricing_item_benefit>Free Service</Pricing_item_benefit>
-                        <Pricing_item_benefit>Multiple Accounts</Pricing_item_benefit>
-                        <Pricing_item_benefit>Management No</Pricing_item_benefit>
-                        <Pricing_item_benefit>Unlimited Data</Pricing_item_benefit>
-                        <Pricing_item_benefit>Whatever You Need</Pricing_item_benefit>
-                        <Pricing_item_link href="javascript:void(0)">Sign up</Pricing_item_link>
-                    </Pricing_item>
+                    {pricingItemData.map(el => (
+                        <Pricing_item>
+                            <Pricing_item_pop>{el.angle}</Pricing_item_pop>
+                            <Pricing_item_title>{el.title}</Pricing_item_title>
+                            <Pricing_item_price>{el.price}</Pricing_item_price>
+                            {el.benefit.map(text =>
+                                <Pricing_item_benefit>
+                                    {text}
+                                </Pricing_item_benefit>
+                            )}
+
+                            <Pricing_item_link>{el.link}</Pricing_item_link>
+                        </Pricing_item>
+                    ))}
                 </Pricing_inner>
             </Container>
         </Pricing_section>
